@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Music</title>
+    <link rel="icon" type="image/png" href="/assets/logo_piano.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>Piano</h2>
+            <div class="column volume-slider">
+                <span>Volume</span> 
+                <input type="range" min="0" max="1" value="0.5" step="any">
+            </div>
+            <div class="column keys-checkbox">
+                <span>Show Keys</span> 
+                <input type="checkbox" checked>
+            </div>
+        </header>
+        <ul class="piano-keys">
+            <!-- Octave 0 -->
+            <li class="key white" data-key="A0"><span>A0</span></li>
+            <li class="key black" data-key="A#0"><span>A0#</span></li>
+            <li class="key white" data-key="B0"><span>B0</span></li>
+            <!-- Octave 1 -->
+            <li class="key white" data-key="C1"><span>C1</span></li>
+            <li class="key black" data-key="C#1"><span>C1#</span></li>
+            <li class="key white" data-key="D1"><span>D1</span></li>
+            <li class="key black" data-key="D#1"><span>D1#</span></li>
+            <li class="key white" data-key="E1"><span>E1</span></li>
+            <li class="key white" data-key="F1"><span>F1</span></li>
+            <li class="key black" data-key="F#1"><span>F1#</span></li>
+            <li class="key white" data-key="G1"><span>G1</span></li>
+            <li class="key black" data-key="G#1"><span>G1#</span></li>
+            <li class="key white" data-key="A1"><span>A1</span></li>
+            <li class="key black" data-key="A#1"><span>A1#</span></li>
+            <li class="key white" data-key="B1"><span>B1</span></li>
+            <!-- Octave 2 -->
+            <li class="key white" data-key="C2"><span>C2</span></li>
+            <li class="key black" data-key="C#2"><span>C2#</span></li>
+            <li class="key white" data-key="D2"><span>D2</span></li>
+            <li class="key black" data-key="D#2"><span>D2#</span></li>
+            <li class="key white" data-key="E2"><span>E2</span></li>
+            <li class="key white" data-key="F2"><span>F2</span></li>
+            <li class="key black" data-key="F#2"><span>F2#</span></li>
+            <li class="key white" data-key="G2"><span>G2</span></li>
+            <li class="key black" data-key="G#2"><span>G2#</span></li>
+            <li class="key white" data-key="A2"><span>A2</span></li>
+            <li class="key black" data-key="A#2"><span>A2#</span></li>
+            <li class="key white" data-key="B2"><span>B2</span></li>
+            <!-- Octave 3 -->
+            <li class="key white" data-key="C3"><span>C3</span></li>
+            <li class="key black" data-key="C#3"><span>C3#</span></li>
+            <li class="key white" data-key="D3"><span>D3</span></li>
+            <li class="key black" data-key="D#3"><span>D3#</span></li>
+            <li class="key white" data-key="E3"><span>E3</span></li>
+            <li class="key white" data-key="F3"><span>F3</span></li>
+            <li class="key black" data-key="F#3"><span>F3#</span></li>
+            <li class="key white" data-key="G3"><span>G3</span></li>
+            <li class="key black" data-key="G#3"><span>G3#</span></li>
+            <li class="key white" data-key="A3"><span>A3</span></li>
+            <li class="key black" data-key="A#3"><span>A3#</span></li>
+            <li class="key white" data-key="B3"><span>B3</span></li>
+            <!-- Octave 4 -->
+            <li class="key white" data-key="C4"><span>C4</span></li>
+            <li class="key black" data-key="C#4"><span>C4#</span></li>
+            <li class="key white" data-key="D4"><span>D4</span></li>
+            <li class="key black" data-key="D#4"><span>D4#</span></li>
+            <li class="key white" data-key="E4"><span>E4</span></li>
+            <li class="key white" data-key="F4"><span>F4</span></li>
+            <li class="key black" data-key="F#4"><span>F4#</span></li>
+            <li class="key white" data-key="G4"><span>G4</span></li>
+            <li class="key black" data-key="G#4"><span>G4#</span></li>
+            <li class="key white" data-key="A4"><span>A4</span></li>
+            <li class="key black" data-key="A#4"><span>A4#</span></li>
+            <li class="key white" data-key="B4"><span>B4</span></li>
+            <!-- Octave 5 -->
+            <li class="key white" data-key="C5"><span>C5</span></li>
+            <li class="key black" data-key="C#5"><span>C5#</span></li>
+            <li class="key white" data-key="D5"><span>D5</span></li>
+            <li class="key black" data-key="D#5"><span>D5#</span></li>
+            <li class="key white" data-key="E5"><span>E5</span></li>
+            <li class="key white" data-key="F5"><span>F5</span></li>
+            <li class="key black" data-key="F#5"><span>F5#</span></li>
+            <li class="key white" data-key="G5"><span>G5</span></li>
+            <li class="key black" data-key="G#5"><span>G5#</span></li>
+            <li class="key white" data-key="A5"><span>A5</span></li>
+            <li class="key black" data-key="A#5"><span>A5#</span></li>
+            <li class="key white" data-key="B5"><span>B5</span></li>
+            <!-- Octave 6 -->
+            <li class="key white" data-key="C6"><span>C6</span></li>
+            <li class="key black" data-key="C#6"><span>C6#</span></li>
+            <li class="key white" data-key="D6"><span>D6</span></li>
+            <li class="key black" data-key="D#6"><span>D6#</span></li>
+            <li class="key white" data-key="E6"><span>E6</span></li>
+            <li class="key white" data-key="F6"><span>F6</span></li>
+            <li class="key black" data-key="F#6"><span>F6#</span></li>
+            <li class="key white" data-key="G6"><span>G6</span></li>
+            <li class="key black" data-key="G#6"><span>G6#</span></li>
+            <li class="key white" data-key="A6"><span>A6</span></li>
+            <li class="key black" data-key="A#6"><span>A6#</span></li>
+            <li class="key white" data-key="B6"><span>B6</span></li>
+            <!-- Octave 7 -->
+            <li class="key white" data-key="C7"><span>C7</span></li>
+            <li class="key black" data-key="C#7"><span>C7#</span></li>
+            <li class="key white" data-key="D7"><span>D7</span></li>
+            <li class="key black" data-key="D#7"><span>D7#</span></li>
+            <li class="key white" data-key="E7"><span>E7</span></li>
+            <li class="key white" data-key="F7"><span>F7</span></li>
+            <li class="key black" data-key="F#7"><span>F7#</span></li>
+            <li class="key white" data-key="G7"><span>G7</span></li>
+            <li class="key black" data-key="G#7"><span>G7#</span></li>
+            <li class="key white" data-key="A7"><span>A7</span></li>
+            <li class="key black" data-key="A#7"><span>A7#</span></li>
+            <li class="key white" data-key="B7"><span>B7</span></li>
+            <!-- Octave 8 -->
+            <li class="key white" data-key="C8"><span>C8</span></li>   
+        </ul>
+    </div>
+    <script src="./piano.js" defer></script>
+</body>
+</html>
